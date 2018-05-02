@@ -87,7 +87,7 @@ int16_t magInterference = 0;
 	 magMeasCount = (buffer[9] << 8) | buffer[8];
 	 magInterference = buffer[10];
 
- 	 printf("Head,Ang,Strgth,Cnt,Intf,Stat: %d, %d, %d, %d, %d, %d\n",
+ 	 printf("Heading,Angle,Strength,Count,Interference,Status: %d, %d, %d, %d, %d, %d\n",
  			 iRho, iThe, calStrength, magMeasCount, magInterference, status);
  	 usleep(100000);
  }
