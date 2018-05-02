@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Advanced Input Systems 2018.
+ * Name: LynxSocketClient
  *
  * Author: Chad Kidd
  *
@@ -87,7 +87,7 @@ int16_t magInterference = 0;
 	 magMeasCount = (buffer[9] << 8) | buffer[8];
 	 magInterference = buffer[10];
 
- 	 printf("Head,Ang,Strgth,Cnt,Intf,Status: %d, %d, %d, %d, %d, %d\n",
+ 	 printf("Head,Ang,Strgth,Cnt,Intf,Stat: %d, %d, %d, %d, %d, %d\n",
  			 iRho, iThe, calStrength, magMeasCount, magInterference, status);
  	 usleep(100000);
  }
